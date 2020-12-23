@@ -10,25 +10,40 @@
 <body>
 
     <!-- Navbar section -->   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <div class="sticky-top">
+      <div class="top-banner">
+        <div class="p-0 pt-3 container flex">
+          <img  src="/img/akutahu-logo.png" alt="" class="img-fluid brand-image">
+          <img  src="/img/akutahu-jargon.png" alt="" class="img-fluid brand-image">
+          <input type="text" class="search-input" placeholder="Search . . .">
+          <button><img class="search-button" src="/img/Vector.svg" alt=""></button>
+          <img class="img-fluid sign-image" src="/img/sign.png" alt="" >
+          <div class="btn btn-outline-danger">Masuk</div>
+          <div class="btn button-gabung">Ayo Gabung</div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="p-0 container">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link bold" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Nasional</a>
+                <a class="nav-link" href="#">Kesehatan</a>
+                <a class="nav-link" href="#">Gaya Hidup</a>
+                <a class="nav-link" href="#">Teknologi</a>
+                <a class="nav-link" href="#">Budaya</a>
+                <a class="nav-link" href="#">Pendidikan</a>
+                <a class="nav-link" href="#">Indeks</a>
+                <a class="nav-link" href="#">Sobat Akutahu</a>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+
+    </div>
 
       <!-- trending section -->
-      <div class="breaking container mt-3">
+      <div class="breaking container mt-4">
         <div class="row">
             <div class="p-2 breaking-left col-sm-3 ">
                 <p class="fw-bold text-white">Berita tercepat dan Penting!</p>
@@ -49,6 +64,36 @@
 
         </div>
       </div>
+
+
+      <!-- small-gutter section -->
+      <div class="container small-gutter mt-4">
+        <div class="row ">
+          <div class="col-lg-7">
+            <div class="feature-img-thumb">
+              <img class="img-fluid" src="/img/img-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="right-img row">
+              <div class="col-lg-12">
+                <div class="feature-img-thumb">
+                  <img src="/img/img-2.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="feature-img-thumb">
+                  <img src="/img/img-3.jpg" alt="" class="img-fluid">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       <!-- Footer section --> 
       <footer class="site-footer mt-5">
