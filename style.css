@@ -56,6 +56,9 @@ body {
   width: 30px;
   margin: 0 20px;
 }
+.fa-search {
+  color: white;
+}
 
 .button-gabung {
   color: white;
@@ -79,6 +82,42 @@ body {
 
 .bold {
   font-weight: bold !important;
+}
+
+/* Side Panel Section */
+.sidepanel {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EBEFF0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #111111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  background-color: #b4b4b4;
+  color: #be322f;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  margin-left: 50px;
 }
 
 .trending {
@@ -118,6 +157,7 @@ body {
   margin-left: -15px;
 }
 
+/* Footer-section */
 .site-footer {
   padding: 4em 0;
   background: #be322f;
@@ -126,11 +166,17 @@ body {
   color: white;
 }
 .site-footer p {
+  font-size: 14px;
   margin-bottom: 8px;
   color: white;
 }
 .site-footer ul li {
-  margin-bottom: 22px;
+  font-size: 15px;
+  margin-bottom: 17px;
+  color: white;
+}
+
+.fab {
   color: white;
 }
 
