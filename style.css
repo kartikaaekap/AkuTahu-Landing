@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
+/* global section */
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -7,6 +9,14 @@
 
 body {
   background-color: #ebeff0;
+}
+
+.relative {
+  position: relative;
+}
+
+ul {
+  list-style: none;
 }
 
 /* top-banner section */
@@ -118,23 +128,7 @@ body {
   margin-left: -15px;
 }
 
-.site-footer {
-  padding: 4em 0;
-  background: #be322f;
-}
-.site-footer h5 {
-  color: white;
-}
-.site-footer p {
-  margin-bottom: 8px;
-  color: white;
-}
-.site-footer ul li {
-  margin-bottom: 22px;
-  color: white;
-}
-
-/* small-gutter-sectiion */
+/* small-gutter-section */
 .small-gutter {
   padding: 0;
 }
@@ -154,6 +148,47 @@ body {
   width: 100%;
   object-fit: cover;
   margin-left: -5px;
+}
+
+.top-post-detail {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.top-post-detail .tags {
+  font-size: small;
+  font-weight: bold;
+}
+
+.top-post-detail li {
+  width: 200px;
+  color: white;
+  padding: 5px 30px;
+  background-color: #eb3f38;
+  border-radius: 0 20px 0 20px;
+}
+
+.top-post-detail a {
+  text-decoration: none;
+  color: white;
+}
+
+/* footer section */
+.site-footer {
+  padding: 4em 0;
+  background: #be322f;
+}
+.site-footer h5 {
+  color: white;
+}
+.site-footer p {
+  margin-bottom: 8px;
+  color: white;
+}
+.site-footer ul li {
+  margin-bottom: 22px;
+  color: white;
 }
 
 /* custom-container  */
