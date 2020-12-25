@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+.flex {
+  display: flex;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -30,7 +34,7 @@ ul {
 }
 
 .overlay-bg {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* top-banner section */
@@ -106,6 +110,11 @@ ul {
 
 .bold {
   font-weight: bold !important;
+}
+
+/* banner iklan */
+.banner-iklan {
+  padding: 0;
 }
 
 /* Side Panel Section */
@@ -219,20 +228,30 @@ ul {
 }
 
 .feature-img-thumb > img {
-  height: 300px;
+  height: 320px;
   width: 100%;
   object-fit: cover;
   transition: all 0.3s ease 0s;
 }
 
+.right-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .right-img img {
-  height: 130px;
+  height: 150px;
   width: 100%;
   object-fit: cover;
 }
 
 .right-content {
-  padding-right: 15 px;
+  padding-right: 16px;
 }
 
 .top-post-detail {
@@ -276,6 +295,14 @@ ul {
 
 .meta li i {
   margin-right: 10px;
+}
+
+/* berita populer section */
+.berita-left {
+  background-clip: content-box;
+  height: 700px;
+  background-color: white;
+  padding: 0 10px 0 0;
 }
 
 /* footer section */
