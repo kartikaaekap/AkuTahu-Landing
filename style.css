@@ -30,7 +30,7 @@ ul {
 }
 
 .overlay-bg {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* top-banner section */
@@ -212,13 +212,17 @@ ul {
 .feature-img-thumb {
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease 0s;
+}
+
+.feature-img-thumb:hover img {
+  transform: scale(1.1);
 }
 
 .feature-img-thumb > img {
   height: 300px;
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s ease 0s;
 }
 
 .right-img img {
