@@ -17,6 +17,20 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.overlay-bg {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* top-banner section */
@@ -198,6 +212,7 @@ ul {
 .feature-img-thumb {
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease 0s;
 }
 
 .feature-img-thumb > img {
@@ -210,31 +225,53 @@ ul {
   height: 130px;
   width: 100%;
   object-fit: cover;
-  margin-left: -5px;
+}
+
+.right-content {
+  padding-right: 15 px;
 }
 
 .top-post-detail {
   position: absolute;
   bottom: 30px;
-  left: 20px;
+  left: 40px;
 }
 
-.top-post-detail .tags {
-  font-size: small;
+.top-post-detail .tag li {
+  font-size: x-small;
   font-weight: bold;
-}
-
-.top-post-detail li {
-  width: 200px;
+  margin-bottom: 10px;
+  width: fit-content;
   color: white;
-  padding: 5px 30px;
+  padding: 5px 20px;
   background-color: #eb3f38;
-  border-radius: 0 20px 0 20px;
+  border-radius: 0 10px 0 10px;
 }
 
 .top-post-detail a {
   text-decoration: none;
   color: white;
+}
+
+.top-post-detail h3 {
+  font-weight: 600;
+}
+
+.desc h3 {
+  width: 400px;
+}
+.meta {
+  font-weight: 300;
+  font-size: x-small;
+}
+
+.meta li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.meta li i {
+  margin-right: 10px;
 }
 
 /* footer section */
