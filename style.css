@@ -400,8 +400,24 @@ ul {
   font-weight: bold;
 }
 
-.berita-left .scroll-view .content .right-content {
+.berita-left .right-content {
   padding: 15px;
+}
+
+.berita-left .right-content .date a {
+  text-decoration: none;
+  color: #b4b4b4;
+  font-size: small;
+}
+
+.berita-left .right-content .date i {
+  margin-right: 10px;
+}
+
+.berita-left .right-content p {
+  font-size: small;
+  color: #b4b4b4;
+  font-weight: 500;
 }
 /* footer section */
 .site-footer {
