@@ -440,35 +440,12 @@ ul {
   color: white;
 }
 
-.berita-left .tag li {
+.berita-left .tag li,
+.berita-right .tag li {
   color: #be322f;
   display: inline-block;
   margin: 5px 10px;
   font-size: small;
-}
-
-.berita-right {
-  background-color: white;
-  background-clip: content-box;
-  padding-right: 0px;
-}
-
-.berita-right > .heading {
-  position: relative;
-  margin: 10px;
-  height: 40px;
-  background: rgb(190, 50, 47);
-  background: linear-gradient(
-    117deg,
-    rgba(190, 50, 47, 1) 0%,
-    rgba(244, 67, 54, 1) 100%
-  );
-}
-
-.berita-right > .heading > p {
-  font-weight: bold;
-  padding: 10px;
-  color: white;
 }
 
 .berita-left .scroll-view {
@@ -494,7 +471,8 @@ ul {
   object-fit: cover;
 }
 
-.berita-left .scroll-view .content .meta {
+.berita-left .scroll-view .content .meta,
+.berita-right .image-heading .meta {
   width: fit-content;
   position: absolute;
   bottom: 20px;
@@ -511,6 +489,11 @@ ul {
   padding: 15px;
 }
 
+.berita-left .right-content h5 {
+  color: #092c4c;
+  font-weight: 600;
+}
+
 .berita-left .right-content .date a {
   text-decoration: none;
   color: #b4b4b4;
@@ -525,6 +508,96 @@ ul {
   font-size: small;
   color: #b4b4b4;
   font-weight: 500;
+}
+
+.berita-right {
+  background-color: white;
+  background-clip: content-box;
+  padding-right: 0px;
+  height: 580px;
+}
+
+.berita-right .heading {
+  position: relative;
+  margin: 10px;
+  height: 40px;
+  background: rgb(190, 50, 47);
+  background: linear-gradient(
+    117deg,
+    rgba(190, 50, 47, 1) 0%,
+    rgba(244, 67, 54, 1) 100%
+  );
+}
+
+.berita-right > .heading > p {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+.berita-right .image-heading {
+  margin: 10px;
+  padding: 0;
+}
+
+.berita-right .heading-title {
+  padding: 0 10px;
+  color: #092c4c;
+  font-weight: bolder;
+  font-size: smaller;
+}
+
+.berita-right .heading-desc {
+  font-size: small;
+  color: #c4c4c4;
+  padding: 0 10px;
+}
+.berita-right .mini-section {
+  margin: 10px;
+}
+.berita-right .mini-image {
+  padding: 0;
+}
+
+.berita-right .mini-title {
+  padding-top: 10px;
+  font-size: x-small;
+  font-weight: bolder;
+  color: #092c4c;
+}
+
+.berita-right .mini-desc {
+  font-size: xx-small;
+  color: #c4c4c4;
+  margin-bottom: 0;
+}
+
+.berita-right #see-more {
+  padding: 10px;
+  font-size: small;
+  text-decoration: none;
+  color: #be322f;
+  font-weight: bolder;
+}
+
+.banner-iklan-400x100 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background-color: white;
+  width: 325px;
+}
+
+.banner-iklan-400x100 .banner-info {
+  margin: 10px;
+  height: 80px;
+  text-align: center;
+  padding: 20px;
+  color: aliceblue;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  height: 1;
 }
 /* footer section */
 .site-footer {
