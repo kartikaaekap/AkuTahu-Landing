@@ -37,6 +37,15 @@ ul {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.active {
+  color: white !important;
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: #be322f;
+  border-radius: 20px;
+  margin-right: 0 !important;
+}
+
 /* top-banner section */
 .top-banner {
   position: sticky;
@@ -299,12 +308,101 @@ ul {
 
 /* berita populer section */
 .berita-left {
+  position: relative;
   background-clip: content-box;
   height: 700px;
   background-color: white;
   padding: 0 10px 0 0;
 }
 
+.berita-left > .heading {
+  position: relative;
+  margin: 10px;
+  height: 40px;
+  background: rgb(190, 50, 47);
+  background: linear-gradient(
+    117deg,
+    rgba(190, 50, 47, 1) 0%,
+    rgba(244, 67, 54, 1) 100%
+  );
+}
+
+.berita-left > .heading > p {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+.berita-left .tag li {
+  color: #be322f;
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: small;
+}
+
+.berita-right {
+  background-color: white;
+  background-clip: content-box;
+  padding-right: 0px;
+}
+
+.berita-right > .heading {
+  position: relative;
+  margin: 10px;
+  height: 40px;
+  background: rgb(190, 50, 47);
+  background: linear-gradient(
+    117deg,
+    rgba(190, 50, 47, 1) 0%,
+    rgba(244, 67, 54, 1) 100%
+  );
+}
+
+.berita-right > .heading > p {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+.berita-left .scroll-view {
+  height: 600px;
+  margin: 0 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.berita-left .scroll-view .content {
+  height: 200px;
+  margin: 10px;
+}
+
+.berita-left .scroll-view .content .left-content {
+  padding: 0;
+  position: relative;
+}
+
+.berita-left .scroll-view .content .content-image {
+  height: 200px !important;
+  width: auto;
+  object-fit: cover;
+}
+
+.berita-left .scroll-view .content .meta {
+  width: fit-content;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #eb3f38;
+  padding: 2px 10px;
+  border-radius: 0 10px 0 10px;
+  color: white;
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.berita-left .scroll-view .content .right-content {
+  padding: 15px;
+}
 /* footer section */
 .site-footer {
   padding: 4em 0;
