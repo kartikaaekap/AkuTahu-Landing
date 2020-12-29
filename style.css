@@ -599,6 +599,10 @@ ul {
   border-radius: 10px;
   height: 1;
 }
+
+/* video */
+
+
 /* footer section */
 .site-footer {
   padding: 4em 0;
@@ -612,7 +616,7 @@ ul {
   color: white;
 }
 .site-footer ul li {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   color: white;
 }
 
