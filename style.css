@@ -7,6 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+.navbar-brand {
+  visibility: hidden;
+  position: absolute;
+}
+
 body {
   background-color: #ebeff0;
 }
@@ -378,7 +383,7 @@ ul {
   padding: 0px;
 }
 
-.reportase> .heading {
+.reportase > .heading {
   position: relative;
   margin: 10px;
   height: 40px;
@@ -606,20 +611,20 @@ ul {
 
 .music {
   height: 320px;
-  width: 320px; 
+  width: 320px;
   background-color: #333333;
 }
 
-.player { 
-  display: flex; 
-  align-items: center; 
-  flex-direction: column; 
-  justify-content: center; 
-} 
+.player {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .label {
   display: flex;
-  z-index:1;
+  z-index: 1;
   background-color: #eb3f38;
   margin-right: 70%;
   padding: 4px 24px;
@@ -628,133 +633,134 @@ ul {
   font-size: 16px;
   font-weight: bold;
 }
-  
-.details { 
-  display: flex; 
-  align-items: center; 
-  flex-direction: column; 
-  justify-content: center; 
-  margin-top: 10px; 
-} 
-  
-.track-art { 
-  height: 140px; 
-  width: 200px; 
-  background-image: URL( 
-     "https://source.unsplash.com/Qrspubmx6kE/640x360"); 
-  background-size: cover; 
-  background-position: center; 
-} 
-  
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.track-art {
+  height: 140px;
+  width: 200px;
+  background-image: URL("https://source.unsplash.com/Qrspubmx6kE/640x360");
+  background-size: cover;
+  background-position: center;
+}
+
 /* Changing the font sizes to suitable ones */
-  
-.track-name { 
-  font-size: 16px; 
+
+.track-name {
+  font-size: 16px;
   font-weight: 600;
   color: white;
-} 
-  
-.track-artist { 
-  font-size: 12px; 
-  color: white;
-} 
-  
-/* Using flex with the row direction to 
-   align items in a horizontal direction */
-.buttons { 
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-} 
-  
-.playpause-track, 
-.prev-track, 
-.next-track { 
-  padding: 1px 10px; 
-  opacity: 1.0; 
-  
-  /* Smoothly transition the opacity */
-  transition: opacity .2s; 
-} 
-  
-/* Change the opacity when mouse is hovered */
-.playpause-track:hover, 
-.prev-track:hover, 
-.next-track:hover { 
-  opacity: 0.7; 
-} 
-  
-/* Define the slider width so that it scales properly */
-.slider_container { 
-  width: 75%; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-} 
-  
-/* Modify the appearance of the slider */
-.seek_slider, .volume_slider { 
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  appearance: none; 
-  height: 3px; 
-  background: white; 
-  opacity: 1.0; 
-  -webkit-transition: .2s; 
-  transition: opacity .2s; 
-} 
-  
-/* Modify the appearance of the slider thumb */
-.seek_slider::-webkit-slider-thumb, 
-.volume_slider::-webkit-slider-thumb { 
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  appearance: none; 
-  width: 8px; 
-  height: 8px; 
-  background: #be322f; 
-  cursor: pointer; 
-  border-radius: 50%; 
-} 
-  
-/* Change the opacity when mouse is hovered */
-.seek_slider:hover, 
-.volume_slider:hover { 
-  opacity: 0.7; 
-} 
-  
-.seek_slider { 
-  width: 60%; 
-} 
-  
-.volume_slider { 
-  width: 30%; 
-} 
-  
-.current-time, 
-.total-duration { 
-  padding: 1px 10px; 
-  color: white;
-} 
-  
-i.fa-volume-down, 
-i.fa-volume-up { 
-  padding: 1px 10px; 
-  color: white;
-} 
-  
-/* Change the mouse cursor to a pointer 
-   when hovered over */ 
-i.fa-step-forward, 
-i.fa-step-backward { 
-  cursor: pointer; 
+}
+
+.track-artist {
+  font-size: 12px;
   color: white;
 }
-i.fa-play-circle, i.fa-pause-circle {
+
+/* Using flex with the row direction to 
+   align items in a horizontal direction */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 1px 10px;
+  opacity: 1;
+
+  /* Smoothly transition the opacity */
+  transition: opacity 0.2s;
+}
+
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 0.7;
+}
+
+/* Define the slider width so that it scales properly */
+.slider_container {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: white;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #be322f;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 0.7;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  padding: 1px 10px;
+  color: white;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 1px 10px;
+  color: white;
+}
+
+/* Change the mouse cursor to a pointer 
+   when hovered over */
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+  color: white;
+}
+i.fa-play-circle,
+i.fa-pause-circle {
   cursor: pointer;
   color: #be322f;
 }
- 
+
 /* footer section */
 .site-footer {
   padding: 4em 0;
@@ -776,5 +782,16 @@ i.fa-play-circle, i.fa-pause-circle {
 @media (min-width: 1200px) {
   .container {
     max-width: 1000px;
+  }
+}
+
+@media (max-width: 756px) {
+  .top-banner {
+    visibility: hidden;
+    position: absolute;
+  }
+  .navbar-brand {
+    visibility: visible;
+    position: static;
   }
 }
