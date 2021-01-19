@@ -14,14 +14,19 @@
     <!-- Navbar section -->   
     <div class="sticky-top">
       <div class="top-banner">
-        <div class="p-0 pt-3 container">
-          <img  src="img/akutahu-logo.png" alt="" class="img-fluid brand-image">
-          <img  src="img/akutahu-jargon.png" alt="" class="img-fluid brand-image">
-          <input type="text" class="search-input" placeholder="Search . . .">
-          <button><i class="fa fa-search"></i></button>
-          <img class="img-fluid sign-image" src="img/sign.png" alt="" >
-          <div class="btn btn-outline-danger">Masuk</div>
-          <div class="btn button-gabung">Ayo Gabung</div>
+        <div class="p-0 pt-3 container d-flex justify-content-between">
+          <span class="brand">
+            <img  src="img/akutahu-logo.png" alt="" class="img-fluid brand-image">
+
+          </span>
+          <span class="right-banner">
+            <input type="text" class="search-input" placeholder="Search . . .">
+            <button><i class="fa fa-search"></i></button>
+            <img class="img-fluid sign-image" src="img/sign.png" alt="" >
+            <div class="btn btn-outline-danger">Masuk</div>
+            <div class="btn button-gabung">Ayo Gabung</div>
+
+          </span>
         </div>
       </div>
       <div id="mySidepanel" class="sidepanel">
@@ -169,11 +174,10 @@
           <!-- left side -->
           <div class="col-lg-8 col-xs-12 berita-left">
             <div class="heading">
-              <p>Berita Populer</p>
+              <p>Berita Utama</p>
             </div>
             <div class="tag">
               <button class="tablinks" onclick="openNews(event, 'Nasional')" id="defaultOpen">Nasional</button>
-              <button class="tablinks" onclick="openNews(event, 'Internasional')">Internasional</button>
             </div>
             <div id="Nasional" class="tabcontent mt-2">
               <div class="scroll-view">
@@ -532,6 +536,7 @@
               </div>
               <div class="tag">
                 <button class="othertablinks" onclick="openOther(event, 'Olahraga')" id="defaultOpenOther">Olahraga</button>
+                <button class="othertablinks" onclick="openOther(event, 'International')">International</button>
                 <button class="othertablinks" onclick="openOther(event, 'Musik')">Musik</button>
                 <button class="othertablinks" onclick="openOther(event, 'Ruang Inspirasi')">Ruang Inspirasi</button>
                 <button class="othertablinks" onclick="openOther(event, 'Kegiatan Positif')">Kegiatan Positif</button>
