@@ -63,10 +63,11 @@ ul {
   color: white !important;
   font-weight: bold;
   font-size: 12px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   background-color: #be322f;
   border-radius: 20px;
   margin-right: 0 !important;
+  margin-left: 12px;
 }
 
 .tabcontent .othertabcontent {
@@ -834,6 +835,9 @@ i.fa-pause-circle {
   .col-xs-12 {
     width: 100%;
   }
+  .brand-image {
+    height: 45px;
+  }
   .news-ticker ul li {
     list-style: none;
     font-size: 8px;
@@ -850,13 +854,16 @@ i.fa-pause-circle {
   }
   .berita-right {
     height: 660px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .right-side {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .berita-lainnya {
     height: 740px;
+  }
+  .add-marginmobile {
+    margin-top: 30px;
   }
 }
 
