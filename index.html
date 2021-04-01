@@ -53,14 +53,40 @@
               <div class="navbar-nav">
                 <a href="javascript:void(0)" class="nav-link"  onclick="openNav()"><i class="fa fa-bars sizebars"></i></a>
                 <a class="nav-link bold" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Nasional</a>
-                <a class="nav-link" href="#">Kesehatan</a>
-                <a class="nav-link" href="#">Gaya Hidup</a>
-                <a class="nav-link" href="#">Teknologi</a>
-                <a class="nav-link" href="#">Budaya</a>
-                <a class="nav-link" href="#">Pendidikan</a>
-                <a class="nav-link" href="#">Indeks</a>
-                <a class="nav-link" href="#">Sobat Akutahu</a>
+                <div class="dropdown">
+                  <a class="nav-link">Berita Utama</a>
+                  <!-- <button class="dropbtn">Dropdown</button> -->
+                  <div class="dropdown-content">
+                    <a href="#">Infografis</a>
+                    <a href="#">Artikel</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a class="nav-link">Kanal</a>
+                  <!-- <button class="dropbtn">Dropdown</button> -->
+                  <div class="dropdown-content">
+                    <a href="#">Gaya Hidup</a>
+                    <a href="#">Kesehatan</a>
+                    <a href="#">Teknologi</a>
+                    <a href="#">Olahraga</a>
+                    <a href="#">Budaya</a>
+                    <a href="#">Pendidikan</a>
+                    <a href="#">Hiburan</a>
+                    <a href="#">Akutahupedia</a>
+                    <a href="#">Ragam</a>
+                    <a href="#">Selingan</a>
+                    <a href="#">Komik</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a class="nav-link">Indeks</a>
+                  <!-- <button class="dropbtn">Dropdown</button> -->
+                  <div class="dropdown-content">
+                    <a href="#">Berita Komunitas</a>
+                    <a href="#">Sobat Akutahu</a>
+                    <a href="#">Album Magang</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -72,7 +98,7 @@
       <div class="breaking container mt-4">
         <div class="row">
             <div class="p-2 breaking-left col-lg-3 col-s-3 col-xs-3">
-                <p class="fw-bold text-white text" >Berita tercepat dan Penting!</p>
+                <p class="fw-bold text-white text" >Headline News!</p>
             </div>
             <div class="breaking-right col-lg-9 col-s-9 col-xs-9 p-0">
                 <div class="breaking-arrow">
@@ -91,80 +117,84 @@
         </div>
       </div>
 
-
-      <!-- small-gutter section -->
-      <div class="container small-gutter mt-4">
-        <div class="row ">
-          <div class="col-lg-8 col-xs-12 mr-1 relative">
-            <div class="feature-img-thumb ">
-              <div class="overlay overlay-bg"></div>
-              <img class="img-fluid" src="img/img-1.jpg" alt="">
+      <!-- Berita Utama -->
+      <div class="container mt-4">
+        <div class="row">
+          <div class="berita-utama">
+            <div class="heading">
+              <p>Berita Utama</p>
             </div>
-            <div class="top-post-detail">
-              <ul class="tag">
-                <li>
-                  Nasional
-                </li>
-              </ul>
-              <a href="" class="desc">
-                <h3>Semangat Guru Menghadapi Tantangan</h3>
-              </a>
-              <ul class="meta">
-                <li><a href="#"><i class="far fa-user fa-sm"></i>Mark wiens</a></li>
-                <li><a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a></li>
-                <li><a href="#"><i class="far fa-comment-dots fa-sm"></i>06 Comments</a></li>
-                </ul> 
-            </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 flex ">
-            <div class="right-img row right">
-              <div class="col-lg-12 col-xs-12 relative right-content">
-                <div class="feature-img-thumb ">
-                  <div class="overlay overlay-bg "></div>
-                  <img src="img/img-2.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="top-post-detail-small">
-                  <ul class="tag">
-                    <li>
-                      Nasional
-                    </li>
-                  </ul>
-                  <a href="" class="desc">
-                    <h6>Solusi Belajar Anak Wamena</h6>
-                  </a>
-                  <ul class="meta-small">
-                    <li><a href="#"><i class="far fa-user fa-sm"></i>Mark wiens</a></li>
-                    <li><a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a></li>
-                    <li><a href="#"><i class="far fa-comment-dots fa-sm"></i>06 Comments</a></li>
-                    </ul> 
-                </div>
-              </div>
-              <div class="col-lg-12 col-xs-12 relative  right-content">
+            <div class="row slide-utama">
+              <div class="col-lg-8 col-xs-12 mr-1 relative">
                 <div class="feature-img-thumb">
-                    <div class="overlay overlay-bg"></div>
-                  <img src="img/img-3.jpg" alt="" class="img-fluid">
-
+                  <div class="overlay overlay-bg"></div>
+                  <img class="img-fluid" src="img/img-1.jpg" alt="">
                 </div>
-                <div class="top-post-detail-small">
-                  <ul class="tag">
+                <div class="top-post-detail">
+                  <!-- <ul class="tag">
                     <li>
                       Nasional
                     </li>
-                  </ul>
+                  </ul> -->
                   <a href="" class="desc">
-                    <h6>Listrik Masuk Desa</h6>
+                    <h3>Semangat Guru Menghadapi Tantangan</h3>
                   </a>
-                  <ul class="meta-small">
+                  <ul class="meta">
                     <li><a href="#"><i class="far fa-user fa-sm"></i>Mark wiens</a></li>
                     <li><a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a></li>
                     <li><a href="#"><i class="far fa-comment-dots fa-sm"></i>06 Comments</a></li>
                     </ul> 
-                </div>  
+                </div>
               </div>
-
+              <div class="col-lg-4 col-xs-12 flex ">
+                <div class="right-img row right">
+                  <div class="col-lg-12 col-xs-12 relative right-content">
+                    <div class="feature-img-thumb ">
+                      <div class="overlay overlay-bg "></div>
+                      <img src="img/img-2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="top-post-detail-small">
+                      <!-- <ul class="tag">
+                        <li>
+                          Nasional
+                        </li>
+                      </ul> -->
+                      <a href="" class="desc">
+                        <h6>Solusi Belajar Anak Wamena</h6>
+                      </a>
+                      <ul class="meta-small">
+                        <li><a href="#"><i class="far fa-user fa-sm"></i>Mark wiens</a></li>
+                        <li><a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a></li>
+                        <li><a href="#"><i class="far fa-comment-dots fa-sm"></i>06 Comments</a></li>
+                        </ul> 
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xs-12 relative  right-content">
+                    <div class="feature-img-thumb">
+                        <div class="overlay overlay-bg"></div>
+                      <img src="img/img-3.jpg" alt="" class="img-fluid">
+    
+                    </div>
+                    <div class="top-post-detail-small">
+                      <!-- <ul class="tag">
+                        <li>
+                          Nasional
+                        </li>
+                      </ul> -->
+                      <a href="" class="desc">
+                        <h6>Listrik Masuk Desa</h6>
+                      </a>
+                      <ul class="meta-small">
+                        <li><a href="#"><i class="far fa-user fa-sm"></i>Mark wiens</a></li>
+                        <li><a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a></li>
+                        <li><a href="#"><i class="far fa-comment-dots fa-sm"></i>06 Comments</a></li>
+                        </ul> 
+                    </div>  
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -174,11 +204,11 @@
           <!-- left side -->
           <div class="col-lg-8 col-xs-12 berita-left">
             <div class="heading">
-              <p>Berita Utama</p>
+              <p>Nasional</p>
             </div>
-            <div class="tag">
+            <!-- <div class="tag">
               <button class="tablinks" onclick="openNews(event, 'Nasional')" id="defaultOpen">Nasional</button>
-            </div>
+            </div> -->
             <div id="Nasional" class="tabcontent mt-2">
               <div class="scroll-view">
                 <div class="row content">
@@ -264,13 +294,8 @@
           <!-- right side -->
           <div class="col-lg-4 berita-right">
             <div class="heading">
-              <p>Indeks</p>
+              <p>Berita Komunitas</p>
             </div>
-            <div class="tag">
-              <button class="active">Komunitas Akutahu</button>
-              <button>Berita Klien</button>
-              <button>Berita Anak Magang</button>
-              </div>
             <div class="image-heading relative">
               <div class="overlay overlay-bg"></div>
               <img src="img/img-2.jpg" alt="" class="img-fluid">
@@ -327,7 +352,7 @@
                 <div class="top-post-detail">
                   <ul class="tag">
                     <li>
-                      Nasional
+                      Warta
                     </li>
                   </ul>
                   <a href="" class="desc">
@@ -350,7 +375,7 @@
                     <div class="top-post-detail-small">
                       <ul class="tag">
                         <li>
-                          Nasional
+                          Warta
                         </li>
                       </ul>
                       <a href="" class="desc">
@@ -372,7 +397,7 @@
                     <div class="top-post-detail-small">
                       <ul class="tag">
                         <li>
-                          Nasional
+                          Analisis
                         </li>
                       </ul>
                       <a href="" class="desc">
@@ -398,7 +423,7 @@
                     <div class="top-post-detail-small">
                       <ul class="tag">
                         <li>
-                          Nasional
+                          Warta
                         </li>
                       </ul>
                       <a href="" class="desc">
@@ -420,7 +445,7 @@
                     <div class="top-post-detail-small">
                       <ul class="tag">
                         <li>
-                          Nasional
+                          Analisis
                         </li>
                       </ul>
                       <a href="" class="desc">
@@ -446,7 +471,7 @@
       
       <!-- berita Lainnya -->
       <div class="container mt-4 ">
-        <div class="row">
+        <div class="row relative">
           <!-- left side -->
           <div class="col-lg-8 col-xs-12 banner-iklan">
             <!-- <img src="img/block_5ec65b4cb6edb.jpg" class="img-responsive" alt="Snow" style="width:98%"> -->
@@ -455,19 +480,39 @@
                 <p>Berita Lainnya</p>
               </div>
               <div class="tag">
-                <button class="othertablinks" onclick="openOther(event, 'Olahraga')" id="defaultOpenOther">Olahraga</button>
-                <button class="othertablinks" onclick="openOther(event, 'Pendidikan')">Pendidikan</button>
+                <button class="othertablinks" onclick="openOther(event, 'Gaya Hidup')" id="defaultOpenOther">Gaya Hidup</button>
                 <button class="othertablinks" onclick="openOther(event, 'Kesehatan')">Kesehatan</button>
-                <!-- <button class="othertablinks" onclick="openOther(event, 'Gaya Hidup')">Gaya Hidup</button> -->
-                <button class="othertablinks" onclick="openOther(event, 'Musik')">Musik</button>
-                <button class="othertablinks" onclick="openOther(event, 'AKUTAHUPedia')">AKUTAHUPedia</button>
-                <button class="othertablinks" onclick="openOther(event, 'Webinar')">Webinar</button>
-                <!-- <button class="othertablinks" onclick="openOther(event, 'Sinopsis')">Sinopsis</button> -->
-                <button class="othertablinks" onclick="openOther(event, 'Komik')">Komik</button>
+                <button class="othertablinks" onclick="openOther(event, 'Teknologi')">Teknologi</button>
+                <button class="othertablinks" onclick="openOther(event, 'Olahraga')">Olahraga</button>
+                <button class="othertablinks" onclick="openOther(event, 'Budaya')">Budaya</button>
+                <button class="othertablinks" onclick="openOther(event, 'Pendidikan')">Pendidikan</button>
+                <button class="othertablinks" onclick="openOther(event, 'Hiburan')">Hiburan</button>
+                <button class="othertablinks" onclick="openOther(event, 'Akutahupedia')">Akutahupedia</button>
                 <button class="othertablinks" onclick="openOther(event, 'Ragam')">Ragam</button>
+                <button class="othertablinks" onclick="openOther(event, 'Selingan')">Selingan</button>
+                <button class="othertablinks" onclick="openOther(event, 'Komik')">Komik</button>
               </div>
-              <div id="Olahraga" class="othertabcontent mt-2">
+              <div id="Gaya Hidup" class="othertabcontent mt-2">
                 <div class="scroll-view">
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Olahraga
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Electoral College :Sistem Pemilu Khas Amerika Serikat</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
                   <div class="row content">
                     <div class="col-lg-5 col-xs-5 relative left-content">
                         <div class="overlay overlay-bg"></div>
@@ -547,7 +592,7 @@
                 </div>
               </div>
   
-              <div id="Musik" class="othertabcontent mt-2">
+              <div id="Kesehatan" class="othertabcontent mt-2">
                 <div class="scroll-view">
                   <div class="row content">
                     <div class="col-lg-5 col-xs-5 relative left-content">
@@ -631,14 +676,25 @@
             
           </div>
           <!-- right side Video Section -->
-          <div class="col-lg-4 col-xs-12 right-side">
-            <iframe width="320px" height="240px" src="https://youtube.com/embed/06u8mD4305o?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-4">
-              <iframe width="320px" height="240px" src="https://youtube.com/embed/wJqghxJhhm8" frameborder="0" allowfullscreen></iframe>
+          <div class="col-lg-4 berita-right-positif">
+            <div class="heading">
+              <p>Kegiatan Positif</p>
             </div>
-
+            <div class="image-heading relative">
+              <div class="overlay overlay-bg"></div>
+              <img src="img/img-2.jpg" alt="" class="img-fluid">
+              <div class="meta">
+                AFC
+              </div>
+            </div>
+            <div class="heading-title">Berkunjung ke Istana Maimun, Warisan Kesultanan Melayu di Medan</div>
+            <p class="heading-desc">Oleh Andi Wirapratama</p>
+            <a href="" id="see-more">Lihat lainnya >></a>
+            <div class="mt-5">
+              <iframe width="323px" height="240px" src="https://youtube.com/embed/06u8mD4305o?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
             <!-- Music Player Section -->
-            <div class="music mt-4"> 
+            <div class="music mt-3"> 
               <div class="label">
                 Musik
               </div>
@@ -683,21 +739,21 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>   
 
       <!-- Iklan Banner -->
-      <!-- <div class="banner-iklan container mt-4">
+      <div class="banner-iklan container mt-4">
         <img src="img/block_5ec65b4cb6edb.jpg" class="img-responsive" alt="Snow" style="width:100%">
-      </div> -->
+      </div>
 
 
       <!-- Footer section --> 
       <footer class="site-footer mt-4">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-xs-12">
+            <div class="col-lg-8 col-xs-12">
               <div class="row">
-                <div class="col">
+                <div class="col-4">
                   <ul class="list-unstyled">
                     <li>Tentang Kami</li>
                     <li>Profil Perusahaan</li>
@@ -710,7 +766,7 @@
                     <li>Hubungi Kami</li>
                   </ul>
                 </div>
-                <div class="col">
+                <div class="col-4">
                   <ul class="list-unstyled">
                     <li>Redaksi</li>
                     <li>Pedoman Media Siber</li>
@@ -726,7 +782,7 @@
               
               </div>
             </div>
-            <div class="col-lg-3 col-xs-12">
+            <!-- <div class="col-lg-3 col-xs-12">
               <div class="row">
                 <h5><strong>Grup Media Akutahu</strong></h5>
                 <div class="col-lg-3 col-xs-3 mt-2">
@@ -757,7 +813,7 @@
                   <img style="height:55px" src="img/partner3.png" alt="DNS Nusantara Kominfo">
                 </div>
               </div>
-          </div>
+          </div> -->
           <div class="col-lg-4 col-xs-12">
             <div class="row add-marginmobile">
               <p>
@@ -770,7 +826,7 @@
                 Email : info@akutahu.com
               </p>
               
-            <div class="row mt-2">
+            <!-- <div class="row mt-2">
               <h5><strong>Unduh</strong></h5>
               <div class="col-lg-4 col-xs-4 mt-1">
                 <img style="height:35px" src="img/apple-store.png" alt="logo">
@@ -778,31 +834,106 @@
               <div class="col-lg-4 col-xs-4 mt-1">
                 <img style="height:35px" src="img/google-play.png" alt="logo">
               </div>
+            </div> -->
+            <div class="row mt-4">
+              <p><strong>Ikuti Kami</strong></p>
+              <div class="col-lg-2 col-xs-2 mt-2">
+                <li class="list-unstyled"><a href="https://web.facebook.com/akutahu/" target="_blank"><i class="fab fa-facebook fa-1x"></i></a></li>
+              </div>
+              <div class="col-lg-2 col-xs-2 mt-2">
+                <li class="list-unstyled"><a href="https://twitter.com/akutahu?lang=en" target="_blank"><i class="fab fa-twitter fa-1x"></i></a></li>
+              </div>
+              <div class="col-lg-2 col-xs-2 mt-2">
+                <li class="list-unstyled"><a href="https://www.instagram.com/akutahu/" target="_blank"><i class="fab fa-instagram fa-1x"></i></a></li>
+              </div>
+              <div class="col-lg-2 col-xs-2 mt-2">
+                <li class="list-unstyled"><a href="https://www.youtube.com/channel/UC4dXMQF3dqPPWcXEbynC5hw" target="_blank"><i class="fab fa-youtube fa-1x"></i></a></li>
+              </div>
+              <div class="col-lg-2 col-xs-2 mt-2">
+                <li class="list-unstyled"><a href="https://www.linkedin.com/company/pt.desain-tayang-18---akutahu.com" target="_blank"><i class="fab fa-linkedin fa-1x"></i></a></li>
+              </div>
+              <div class="col-lg-2 col-xs-2 mt-2">
+                <li class="list-unstyled"><a href="https://api.whatsapp.com/send?phone=6281808044663&amp;text=hallo%20akutahu.com" target="_blank"><i class="fab fa-whatsapp fa-1x"></i></a></li>
+              </div>
             </div>
-            <div class="row mt-3">
-              <h5><strong>Ikuti Kami</strong></h5>
-              <div class="col-lg-2 col-xs-2 mt-2">
-                <li class="list-unstyled"><a href="https://web.facebook.com/akutahu/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <div class="row mt-5">
+              <div class="col">
+                <div class="row">
+                  <p><strong>Grup AMP</strong></p>
+                  <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:30px" src="img/logo_akutahu.png" alt="akutahu.com">
+                  </div>
+                  <!-- <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:55px" src="img/akutahuvisual.png" alt="akutahu visual">
+                  </div> -->
+                  <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:30px" src="img/marc.png" alt="MARC">
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-2 col-xs-2 mt-2">
-                <li class="list-unstyled"><a href="https://twitter.com/akutahu?lang=en" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <div class="col">
+                <div class="row">
+                  <p><strong>Pendukung</strong></p>
+                  <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:30px" src="img/siber_kreasi.png" alt="Gerakan Literasi Digital Siber Kreasi">
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-2 col-xs-2 mt-2">
-                <li class="list-unstyled"><a href="https://www.instagram.com/akutahu/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-              </div>
-              <div class="col-lg-2 col-xs-2 mt-2">
-                <li class="list-unstyled"><a href="https://www.youtube.com/channel/UC4dXMQF3dqPPWcXEbynC5hw" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
-              </div>
-              <div class="col-lg-2 col-xs-2 mt-2">
-                <li class="list-unstyled"><a href="https://www.linkedin.com/company/pt.desain-tayang-18---akutahu.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-              </div>
-              <div class="col-lg-2 col-xs-2 mt-2">
-                <li class="list-unstyled"><a href="https://api.whatsapp.com/send?phone=6281808044663&amp;text=hallo%20akutahu.com" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+              <div class="col">
+                <div class="row">
+                  <p><strong>Terdaftar</strong></p>
+                  <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:30px" src="img/pengayoman.png" alt="Terdaftar AHU Kemenkumham">
+                  </div>
+                  <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:30px" src="img/diki.png" alt="Terdaftar KI Kemenkumham">
+                  </div>
+                  <div class="col-lg-3 col-xs-3 mt-2">
+                    <img style="height:30px" src="img/partner3.png" alt="DNS Nusantara Kominfo">
+                  </div>
+                </div>
               </div>
             </div>
           </div>   
-          
         </div>
+        <!-- <div class="row mt-3">
+          <div class="col">
+            <div class="row">
+              <h5><strong>Grup AMP</strong></h5>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/logo_akutahu.png" alt="akutahu.com">
+              </div>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/akutahuvisual.png" alt="akutahu visual">
+              </div>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/marc.png" alt="MARC">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <h5><strong>Pendukung</strong></h5>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/siber_kreasi.png" alt="Gerakan Literasi Digital Siber Kreasi">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <h5><strong>Terdaftar</strong></h5>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/pengayoman.png" alt="Terdaftar AHU Kemenkumham">
+              </div>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/diki.png" alt="Terdaftar KI Kemenkumham">
+              </div>
+              <div class="col-lg-3 col-xs-3 mt-2">
+                <img style="height:55px" src="img/partner3.png" alt="DNS Nusantara Kominfo">
+              </div>
+            </div>
+          </div>
+        </div> -->
         <div class="row text-center">
           <div class="col-lg-12 col-xs-12 mt-5">
               <p>
