@@ -74,6 +74,35 @@ ul {
   display: none;
 }
 
+/* dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:  #be322f !important;
+  font-size: 13px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .nav-link {color: #be322f !important; font-weight: bold !important;}
+
 /* top-banner section */
 .top-banner {
   position: sticky;
@@ -408,6 +437,12 @@ ul {
   padding-left: 24px;
 }
 
+.slide-utama {
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .right-img-repor img {
   height: 160px;
   width: 100%;
@@ -420,6 +455,32 @@ ul {
 }
 
 /* berita populer - berita lainnya section */
+.berita-utama {
+  position: relative;
+  background-clip: content-box;
+  height: 400px;
+  background-color: white;
+  padding: 0px;
+}
+
+.berita-utama > .heading {
+  position: relative;
+  margin: 10px;
+  height: 40px;
+  background: rgb(190, 50, 47);
+  background: linear-gradient(
+    117deg,
+    rgba(190, 50, 47, 1) 0%,
+    rgba(244, 67, 54, 1) 100%
+  );
+}
+
+.berita-utama > .heading > p {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
 .berita-left {
   position: relative;
   background-clip: content-box;
@@ -431,7 +492,7 @@ ul {
 .berita-left-lainnya {
   position: relative;
   background-clip: content-box;
-  height: 862px;
+  height: 1004px;
   background-color: white;
   padding: 1px 10px 0px 0px;
 }
@@ -474,7 +535,8 @@ ul {
 
 .berita-left .tag li,
 .berita-left-lainnya .tag li,
-.berita-right .tag li {
+.berita-right .tag li
+.berita-right-positif .tag li {
   color: #be322f;
   display: inline-block;
   margin: 5px 10px;
@@ -489,7 +551,7 @@ ul {
 }
 
 .berita-left-lainnya .scroll-view {
-  height: 760px;
+  height: 850px;
   margin: 0 10px;
   position: relative;
   overflow: auto;
@@ -528,6 +590,7 @@ ul {
 }
 
 .berita-left .scroll-view .content .meta,
+.berita-right-positif .image-heading .meta,
 .berita-right .image-heading .meta {
   width: fit-content;
   position: absolute;
@@ -607,8 +670,15 @@ ul {
   padding-right: 0px;
   height: 580px;
 }
+.berita-right-positif {
+  background-color: white;
+  background-clip: content-box;
+  padding-right: 0px;
+  height: 400px;
+}
 
-.berita-right .heading {
+.berita-right .heading,
+.berita-right-positif .heading {
   position: relative;
   margin: 10px;
   height: 40px;
@@ -620,50 +690,59 @@ ul {
   );
 }
 
-.berita-right > .heading > p {
+.berita-right > .heading > p,
+.berita-right-positif > .heading > p {
   font-weight: bold;
   padding: 10px;
   color: white;
 }
 
-.berita-right .image-heading {
+.berita-right .image-heading,
+.berita-right-positif .image-heading {
   margin: 10px;
   padding: 0;
 }
 
-.berita-right .heading-title {
+.berita-right .heading-title,
+.berita-right-positif .heading-title {
   padding: 0 10px;
   color: #092c4c;
   font-weight: bolder;
   font-size: smaller;
 }
 
-.berita-right .heading-desc {
+.berita-right .heading-desc,
+.berita-right-positif .heading-desc {
   font-size: small;
   color: #c4c4c4;
   padding: 0 10px;
 }
-.berita-right .mini-section {
+.berita-right .mini-section,
+.berita-right-positif .mini-section {
   margin: 10px;
 }
-.berita-right .mini-image {
+.berita-right .mini-image,
+.berita-right-positif .mini-image {
   padding: 0;
 }
 
-.berita-right .mini-title {
+.berita-right .mini-title,
+.berita-right-positif .mini-title {
   padding-top: 10px;
   font-size: x-small;
   font-weight: bolder;
   color: #092c4c;
 }
 
-.berita-right .mini-desc {
+.berita-right .mini-desc,
+.berita-right-positif .mini-desc {
   font-size: xx-small;
   color: #c4c4c4;
   margin-bottom: 0;
 }
 
-.berita-right #see-more {
+.berita-right #see-more,
+.berita-right-positif #see-more {
   padding: 10px;
   font-size: small;
   text-decoration: none;
@@ -678,6 +757,15 @@ ul {
   height: 100px;
   background-color: white;
   width: 325px;
+}
+
+.video-position {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* height: 100px;
+  background-color: white;
+  width: 325px; */
 }
 
 .banner-iklan-400x100 .banner-info {
@@ -697,7 +785,7 @@ ul {
 
 .music {
   height: 320px;
-  width: 320px;
+  width: 323px;
   background-color: #333333;
 }
 
@@ -941,9 +1029,9 @@ i.fa-pause-circle {
     height: 660px;
     margin-top: 30px;
   }
-  .right-side {
+  /* .right-side {
     margin-top: 30px;
-  }
+  } */
   .berita-lainnya {
     height: 740px;
   }

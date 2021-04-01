@@ -8,23 +8,23 @@ function closeNav() {
 }
 
 /* Sliding/click Berita Populer */
-function openNews(evt, NewsCategory) {
-  var i, tabcontent, tablinks;
+// function openNews(evt, NewsCategory) {
+//   var i, tabcontent, tablinks;
 
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
 
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
 
-  document.getElementById(NewsCategory).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();
+//   document.getElementById(NewsCategory).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+// document.getElementById("defaultOpen").click();
 
 /* Sliding/click Berita Lainnya */
 function openOther(evt, OtherCategory) {
