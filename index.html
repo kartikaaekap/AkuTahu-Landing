@@ -32,7 +32,11 @@
       <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
-        <a href="#">Nasional</a>
+        <a href="#">Berita</a>
+        <a href="#">Infografis</a>
+        <a href="#">Aktivitas</a>
+        <a href="#">Indeks</a>
+        <!-- <a href="#">Nasional</a>
         <a href="#">Internasional</a>
         <a href="#">Kesehatan</a>
         <a href="#">Gaya Hidup</a>
@@ -41,7 +45,7 @@
         <a href="#">Musik</a>
         <a href="#">Pendidikan</a>
         <a href="#">Indeks</a>
-        <a href="#">Komunitas Akutahu</a>
+        <a href="#">Komunitas Akutahu</a> -->
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="p-0 container">
@@ -54,17 +58,21 @@
                 <a href="javascript:void(0)" class="nav-link"  onclick="openNav()"><i class="fa fa-bars sizebars"></i></a>
                 <a class="nav-link bold" aria-current="page" href="#">Home</a>
                 <div class="dropdown">
-                  <a class="nav-link">Berita Utama</a>
+                  <a class="nav-link">Berita</a>
                   <!-- <button class="dropbtn">Dropdown</button> -->
                   <div class="dropdown-content">
-                    <a href="#">Infografis</a>
-                    <a href="#">Artikel</a>
+                    <a href="#">Artikel Utama</a>
+                    <a href="#">Reportase</a>
+                    <a href="#">Kabar Komunitas</a>
+                    <!-- <a href="#">Infografis</a>
+                    <a href="#">Artikel</a> -->
                   </div>
                 </div>
                 <div class="dropdown">
-                  <a class="nav-link">Kanal</a>
+                  <a class="nav-link">Infografis</a>
                   <!-- <button class="dropbtn">Dropdown</button> -->
                   <div class="dropdown-content">
+                    <a href="#">Nasional</a>
                     <a href="#">Gaya Hidup</a>
                     <a href="#">Kesehatan</a>
                     <a href="#">Teknologi</a>
@@ -79,14 +87,15 @@
                   </div>
                 </div>
                 <div class="dropdown">
-                  <a class="nav-link">Indeks</a>
+                  <a class="nav-link">Aktivitas</a>
                   <!-- <button class="dropbtn">Dropdown</button> -->
                   <div class="dropdown-content">
-                    <a href="#">Berita Komunitas</a>
-                    <a href="#">Sobat Akutahu</a>
-                    <a href="#">Album Magang</a>
+                    <a href="#">Komunitas AKUTAHU</a>
+                    <a href="#">Program Magang</a>
+                    <a href="#">Kegiatan Positif</a>
                   </div>
                 </div>
+                <a class="nav-link">Indeks</a>
               </div>
             </div>
           </div>
@@ -98,8 +107,10 @@
       <div class="breaking container mt-4">
         <div class="row">
             <div class="p-2 breaking-left col-lg-3 col-s-3 col-xs-3">
-                <p class="fw-bold text-white text" >Headline News!</p>
+                <p class="fw-bold text-white text" >Informasi Penting!</p>
+                <span id="tanggalwaktu" class="py-0 text-white todayDate" ></span>
             </div>
+            <!-- <p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p> -->
             <div class="breaking-right col-lg-9 col-s-9 col-xs-9 p-0">
                 <div class="breaking-arrow">
                 </div>
@@ -109,8 +120,7 @@
                         <li >Jerman perketat penutupan wilayah mulai Rabu (16/12/2020) hingga Januari 2021</li>
                         <li > Jerman perketat penutupan wilayah mulai Rabu (16/12/2020) hingga Januari 2021</li>
                         <li >Jerman perketat penutupan wilayah mulai Rabu (16/12/2020) hingga Januari 2021</li>
-                    </ul>
-                    
+                    </ul> 
                 </div>
             </div>
 
@@ -122,7 +132,7 @@
         <div class="row">
           <div class="berita-utama">
             <div class="heading">
-              <p>Berita Utama</p>
+              <p>Artikel Utama</p>
             </div>
             <div class="row slide-utama">
               <div class="col-lg-8 col-xs-12 mr-1 relative">
@@ -149,7 +159,7 @@
               <div class="col-lg-4 col-xs-12 flex ">
                 <div class="right-img row right">
                   <div class="col-lg-12 col-xs-12 relative right-content">
-                    <div class="feature-img-thumb ">
+                    <div class="feature-img-thumb">
                       <div class="overlay overlay-bg "></div>
                       <img src="img/img-2.jpg" alt="" class="img-fluid">
                     </div>
@@ -294,14 +304,14 @@
           <!-- right side -->
           <div class="col-lg-4 berita-right">
             <div class="heading">
-              <p>Berita Komunitas</p>
+              <p>Kabar Komunitas</p>
             </div>
             <div class="image-heading relative">
               <div class="overlay overlay-bg"></div>
               <img src="img/img-2.jpg" alt="" class="img-fluid">
-              <div class="meta">
+              <!-- <div class="meta">
                 AFC
-              </div>
+              </div> -->
             </div>
             <div class="heading-title">Berkunjung ke Istana Maimun, Warisan Kesultanan Melayu di Medan</div>
             <p class="heading-desc">Oleh Andi Wirapratama</p>
@@ -469,7 +479,7 @@
 
       
       
-      <!-- berita Lainnya -->
+      <!-- Kanal I -->
       <div class="container mt-4 ">
         <div class="row relative">
           <!-- left side -->
@@ -477,7 +487,7 @@
             <!-- <img src="img/block_5ec65b4cb6edb.jpg" class="img-responsive" alt="Snow" style="width:98%"> -->
             <div class="berita-left-lainnya berita-lainnya">
               <div class="heading">
-                <p>Berita Lainnya</p>
+                <p>Kanal</p>
               </div>
               <div class="tag">
                 <button class="othertablinks" onclick="openOther(event, 'Gaya Hidup')" id="defaultOpenOther">Gaya Hidup</button>
@@ -486,11 +496,11 @@
                 <button class="othertablinks" onclick="openOther(event, 'Olahraga')">Olahraga</button>
                 <button class="othertablinks" onclick="openOther(event, 'Budaya')">Budaya</button>
                 <button class="othertablinks" onclick="openOther(event, 'Pendidikan')">Pendidikan</button>
-                <button class="othertablinks" onclick="openOther(event, 'Hiburan')">Hiburan</button>
+                <!-- <button class="othertablinks" onclick="openOther(event, 'Hiburan')">Hiburan</button>
                 <button class="othertablinks" onclick="openOther(event, 'Akutahupedia')">Akutahupedia</button>
                 <button class="othertablinks" onclick="openOther(event, 'Ragam')">Ragam</button>
                 <button class="othertablinks" onclick="openOther(event, 'Selingan')">Selingan</button>
-                <button class="othertablinks" onclick="openOther(event, 'Komik')">Komik</button>
+                <button class="othertablinks" onclick="openOther(event, 'Komik')">Komik</button> -->
               </div>
               <div id="Gaya Hidup" class="othertabcontent mt-2">
                 <div class="scroll-view">
@@ -499,7 +509,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Olahraga
+                          Gaya Hidup
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -518,7 +528,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Olahraga
+                          Gaya Hidup
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -537,7 +547,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Olahraga
+                          Gaya Hidup
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -556,7 +566,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Olahraga
+                          Gaya Hidup
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -575,7 +585,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Olahraga
+                          Gaya Hidup
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -599,7 +609,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Nasional
+                          Kesehatan
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -618,7 +628,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Nasional
+                          Kesehatan
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -637,7 +647,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Nasional
+                          Kesehatan
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -656,7 +666,7 @@
                         <div class="overlay overlay-bg"></div>
                         <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
                         <div class="meta">
-                          Nasional
+                          Kesehatan
                         </div>
                     </div>
                     <div class="col-lg-7 col-xs-7 right-content">
@@ -683,14 +693,17 @@
             <div class="image-heading relative">
               <div class="overlay overlay-bg"></div>
               <img src="img/img-2.jpg" alt="" class="img-fluid">
-              <div class="meta">
+              <!-- <div class="meta">
                 AFC
-              </div>
+              </div> -->
             </div>
             <div class="heading-title">Berkunjung ke Istana Maimun, Warisan Kesultanan Melayu di Medan</div>
             <p class="heading-desc">Oleh Andi Wirapratama</p>
             <a href="" id="see-more">Lihat lainnya >></a>
-            <div class="mt-5">
+            <div class="atv mt-5">
+              <div class="label">
+                ATV
+              </div>
               <iframe width="323px" height="240px" src="https://youtube.com/embed/06u8mD4305o?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <!-- Music Player Section -->
@@ -739,7 +752,251 @@
             </div>
           </div>
         </div>
-      </div>   
+      </div> 
+      
+      <!-- Kanal II -->
+      <div class="container mt-4 ">
+        <div class="row relative">
+          <!-- left side -->
+          <div class="col-lg-8 col-xs-12 banner-iklan">
+            <!-- <img src="img/block_5ec65b4cb6edb.jpg" class="img-responsive" alt="Snow" style="width:98%"> -->
+            <div class="berita-left-lainnya berita-lainnya">
+              <div class="heading">
+                <p>Kanal</p>
+              </div>
+              <div class="tag">
+                <!-- <button class="othertablinks" onclick="openOther(event, 'Gaya Hidup')">Gaya Hidup</button>
+                <button class="othertablinks" onclick="openOther(event, 'Kesehatan')">Kesehatan</button>
+                <button class="othertablinks" onclick="openOther(event, 'Teknologi')">Teknologi</button>
+                <button class="othertablinks" onclick="openOther(event, 'Olahraga')">Olahraga</button>
+                <button class="othertablinks" onclick="openOther(event, 'Budaya')">Budaya</button>
+                <button class="othertablinks" onclick="openOther(event, 'Pendidikan')">Pendidikan</button> -->
+                <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Hiburan')" id="defaultOpenOtherKanal">Hiburan</button>
+                <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Akutahupedia')">Akutahupedia</button>
+                <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Ragam')">Ragam</button>
+                <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Selingan')">Selingan</button>
+                <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Komik')">Komik</button>
+              </div>
+              <div id="Hiburan" class="othertabcontentkanal mt-2">
+                <div class="scroll-view">
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Hiburan
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Electoral College :Sistem Pemilu Khas Amerika Serikat</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Hiburan
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Electoral College :Sistem Pemilu Khas Amerika Serikat</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Hiburan
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Electoral College :Sistem Pemilu Khas Amerika Serikat</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Hiburan
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Electoral College :Sistem Pemilu Khas Amerika Serikat</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Hiburan
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Electoral College :Sistem Pemilu Khas Amerika Serikat</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="Akutahupedia" class="othertabcontentkanal mt-2">
+                <div class="scroll-view">
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Akutahupedia
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Kamala Harris, Wapres Wanita Pertama AS</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Akutahupedia
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Kamala Harris, Wapres Wanita Pertama AS</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Akutahupedia
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Kamala Harris, Wapres Wanita Pertama AS</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                  <div class="row content">
+                    <div class="col-lg-5 col-xs-5 relative left-content">
+                        <div class="overlay overlay-bg"></div>
+                        <img src="img/img-1.jpg" alt="" class="content-image img-fluid">
+                        <div class="meta">
+                          Akutahupedia
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xs-7 right-content">
+                      <h5>Kamala Harris, Wapres Wanita Pertama AS</h5>
+                      <ul class="date">
+                        <li>
+                          <a href="#"><i class="far fa-calendar fa-sm"></i>03 April, 2018</a>
+    
+                        </li>
+                      </ul>
+                      <p>Buat yang suka bola, apa liga favoritmu ? Mimin mah suka semua terutama klo yang main itu MoSalah, Ronaldo.....</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <!-- right side Video Section -->
+          <div class="col-lg-4 berita-right-positif">
+            <div class="heading">
+              <p>Aktivitas</p>
+            </div>
+            <div class="tag">
+              <!-- <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Akutahupedia')">Akutahupedia</button>
+                <button class="othertablinkskanal" onclick="openOtherKanal(event, 'Ragam')">Ragam</button> -->
+              <button class="othertablinksaktivitas" onclick="openOtherAktivitas(event, 'Komunitas')" id="defaultOpenOtherAktivitas">Komunitas AKUTAHU</button>
+              <button class="othertablinksaktivitas" onclick="openOtherAktivitas(event, 'Magang')">Program Magang</button>
+            </div>
+            <div id="Komunitas" class="othertabcontentaktivitas mt-2">
+              <div class="image-heading relative">
+                <div class="overlay overlay-bg"></div>
+                <img src="img/img-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="heading-title">Electoral College :Sistem Pemilu Khas USA</div>
+              <p class="heading-desc">Oleh Andi Wirapratama</p>
+              <a href="" id="see-more">Lihat lainnya >></a>
+            </div>
+            <div id="Magang" class="othertabcontentaktivitas" mt-2>
+              <div class="image-heading relative">
+                <div class="overlay overlay-bg"></div>
+                <img src="img/img-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="heading-title">Inilah hasil Liga Inggris 2021</div>
+              <p class="heading-desc">Oleh Kartika Putri</p>
+              <a href="" id="see-more">Lihat lainnya >></a>
+            </div>
+            <div class="banner-iklan-325x600">
+              <div class="banner-info">
+                <h3>Iklan UMKM</h3>
+                <h3>(325x600)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
 
       <!-- Iklan Banner -->
       <div class="banner-iklan container mt-4">

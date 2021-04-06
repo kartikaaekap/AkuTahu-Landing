@@ -103,6 +103,8 @@ ul {
 
 .dropdown:hover .nav-link {color: #be322f !important; font-weight: bold !important;}
 
+.nav-link:hover {color: #be322f !important; font-weight: bold !important; cursor: pointer;}
+
 /* top-banner section */
 .top-banner {
   position: sticky;
@@ -173,6 +175,11 @@ ul {
 .nav-link {
   color: #be322f !important;
 }
+/* 
+.nav-link-pointer {
+  color: #be322f !important;
+  cursor: pointer;
+} */
 
 .bold {
   font-weight: bold !important;
@@ -195,6 +202,10 @@ ul {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+}
+
+.todayDate {
+  font-size: 14px;
 }
 
 .sidepanel a {
@@ -303,6 +314,7 @@ ul {
 .right-img {
   position: relative;
   overflow: hidden;
+  padding-left: 5px;
 }
 
 .right {
@@ -492,7 +504,7 @@ ul {
 .berita-left-lainnya {
   position: relative;
   background-clip: content-box;
-  height: 1004px;
+  height: 1030px;
   background-color: white;
   padding: 1px 10px 0px 0px;
 }
@@ -759,6 +771,15 @@ ul {
   width: 325px;
 }
 
+.banner-iklan-325x600 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 600px;
+  background-color: white;
+  width: 325px;
+}
+
 .video-position {
   position: absolute;
   bottom: 0;
@@ -779,6 +800,17 @@ ul {
   height: 1;
 }
 
+.banner-iklan-325x600 .banner-info {
+  margin: 10px;
+  height: 580px;
+  text-align: center;
+  padding: 20px;
+  color: aliceblue;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  height: 1;
+}
+
 /* video */
 
 /* Music */
@@ -786,6 +818,10 @@ ul {
 .music {
   height: 320px;
   width: 323px;
+  background-color: #333333;
+}
+.atv {
+  height: 273px;
   background-color: #333333;
 }
 
